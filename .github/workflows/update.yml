@@ -50,7 +50,7 @@ jobs:
         with:
           key: ${{ matrix.arch }}
       - name: Build
-        run: cargo build --release && mv target/release/stoolap target/release/stoolap_${{ matrix.arch }}
+        run: cargo build --bins --release && mv target/release/stoolap target/release/stoolap_${{ matrix.arch }}
       - name: Upload artifacts
         uses: actions/upload-artifact@v5
         with:
