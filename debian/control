@@ -1,0 +1,16 @@
+Source: stoolap
+Section: database
+Priority: optional
+Maintainer: beavailable <beavailable@proton.me>
+Build-Depends:
+ debhelper-compat (= 13),
+ dpkg-build-api (= 1),
+Standards-Version: 4.7.2
+Homepage: https://github.com/stoolap/stoolap
+
+Package: stoolap
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: A Modern Embedded SQL Database written in Rust
